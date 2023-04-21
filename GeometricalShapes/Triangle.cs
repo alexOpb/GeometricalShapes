@@ -17,7 +17,7 @@ public class Triangle : IShape
             throw new ArgumentException("Строны треугольника не могут быть отрицательными");
 
         if (a + b <= c || a + c <= b || b + c <= a)
-            throw new ArgumentException("Любые две стороны не могут быть больше третьей.");
+            throw new ArgumentException("Сумма любых двух сторон не может быть равна или меньше третьей стороны.");
 
         A = a;
         B = b;
